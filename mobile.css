@@ -1,0 +1,34 @@
+#main-nav .social {
+    display: none;
+}
+#main-nav .container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#header .header-container {
+    grid-template-columns: 1fr;
+}
+
+#main-about .about-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#main-projects .projects-container {
+    grid-template-columns: 1fr;
+}
+
+#main-footer .footer-container {
+    grid-template-columns: 1fr;
+}
+/*birleştirdiğimiz kolonları ayırdık çünkü çalışmadı*/
+#main-footer .footer-container > *:last-child {
+    grid-column: 1;
+}
+#main-footer .footer-container > *:first-child p {
+    text-align: center;
+}
+#main-footer .footer-container > * {
+    border: 1px dotted yellow;
+    padding: 1rem;
+}
